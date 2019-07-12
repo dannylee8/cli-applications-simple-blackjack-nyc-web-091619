@@ -59,7 +59,7 @@ def runner
   while hand < 21
     do hand += hit?(initial_round)
   end
-  
+  end_game(hand)
 
     
   
