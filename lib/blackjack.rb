@@ -28,7 +28,7 @@ def initial_round
   hand = deal_card
   hand += deal_card
   display_card_total(hand)
-  binding.pry
+  hand
 end
 
 def hit?
