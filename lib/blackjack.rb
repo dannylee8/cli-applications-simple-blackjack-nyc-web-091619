@@ -58,7 +58,6 @@ def runner
   hand = initial_round
   until hand > 21 do 
     hand = hit?(hand) 
-  binding.pry
     display_card_total(hand)
   end
   
