@@ -62,8 +62,4 @@ def runner
   else
     display_card_total(hand)
   end
-
-    
-  
 end
-    
