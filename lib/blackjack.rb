@@ -31,12 +31,20 @@ def initial_round
   hand
 end
 
-def hit?
-  # code hit? here
+def hit? (current_total)
+  prompt_user
+  answer = get_user_input
+  if answer = 'h' 
+    current_total += deal_card
+  elsif answer = 's' 
+    current_total
+  else
+    puts "Please enter a valid command"
+
 end
 
 def invalid_command
-  # code invalid_command here
+   code invalid_command here#
 end
 
 #####################################################
