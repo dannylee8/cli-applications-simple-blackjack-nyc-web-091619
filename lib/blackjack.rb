@@ -59,9 +59,8 @@ def runner
   while hand < 21
     do hand += hit?(initial_round)
   end
-  if hand > 21 
-    end_game
-  else
+  
+
     
   
 end
