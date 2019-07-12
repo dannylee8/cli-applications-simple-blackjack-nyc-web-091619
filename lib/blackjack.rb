@@ -56,8 +56,9 @@ end
 def runner
   welcome
   hand = initial_round
-  hand += hit?(hand)
-  if hand > 21
+  
+  do hand += hit?(hand) 
+    hand > 21
     end_game(hand)
   else
     display_card_total(hand)
