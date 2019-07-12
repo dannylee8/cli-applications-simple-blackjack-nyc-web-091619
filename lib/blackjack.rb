@@ -31,7 +31,7 @@ def initial_round
   hand
 end
 
-def hit? (current_total)
+def hit?(current_total)
   prompt_user
   answer = get_user_input
   if answer = 'h' 
@@ -40,13 +40,13 @@ def hit? (current_total)
   elsif answer = 's' 
     return current_total
   else
-    puts "Please enter a valid command"
-    prompt_user
+    invalid_command
+    hit?(current_total)
   end
 end
 
 def invalid_command
-   code invalid_command here#
+  puts "Please enter a valid command"
 end
 
 #####################################################
